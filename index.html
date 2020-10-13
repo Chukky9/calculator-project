@@ -20,6 +20,20 @@ p {
     margin-top: 30px;
 }
 
+@media only screen and (max-width: 768px) {
+  html {
+    background-color: lightblue;
+  }
+
+  .calc-body {
+      height: 100%;
+      width: 100%;
+  }
+}
+
+.arithmetic {
+    background-color: rgba(236, 86, 31, 0.952);
+}
 .calc-body {
     width: 500px;
     height: 550px;
@@ -81,6 +95,7 @@ p {
     margin: auto;
     padding: 10px;
     font-size: 2.5rem;
+    border: none;
 }
 
 .power-btns {
@@ -134,7 +149,7 @@ let resultInfo = '';
 let delNumber = '';
 let delValue = '';
 const display = document.getElementById("display");
-display.focus();
+//display.focus();
 
 //We create functions using function declaration for the simple arithmetic operations 
 function sum(a, b) {
@@ -207,7 +222,7 @@ let arithmetic = function(mathSign) {
     } else { //This stores inputted value in a the first variable
     num1 = Number(info);
     display.value = '';
-    display.focus();
+    //display.focus();
     operator = mathSign;
     info = '';
     resultInfo = '';
