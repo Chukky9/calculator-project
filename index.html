@@ -62,7 +62,7 @@ p {
     text-align: end;
     font-size: 4rem;
     font-weight: 100;
-    
+    border: none;
 }
 
 .power-btn {
@@ -166,9 +166,9 @@ function multiply(a, b) {
 
 function divide(a, b) {
     if (b == 0) {
-        return "That won't work..."
+        return "That won't work...";
     }
-    return a / b;
+    return a / b; 
 }
 
 //We create an 'operate' function that runs arithmetic operations using three arguments(operator, num1 as first operand and num2 as second operand)
@@ -221,7 +221,7 @@ let arithmetic = function(mathSign) {
         resultInfo = '';
     } else { //This stores inputted value in a the first variable
     num1 = Number(info);
-    display.value = '';
+    //display.value = '';
     //display.focus();
     operator = mathSign;
     info = '';
